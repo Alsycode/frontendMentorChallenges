@@ -1,0 +1,146 @@
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", serif;
+}
+
+body#body {
+  background-color: #f3e5d8;
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container */
+.container {
+  background-color: white;
+  border-radius: 50px;
+  max-width: 700px;
+  min-width: 600px;
+  display: flex;
+  flex-direction: column;
+  padding: 60px;
+  gap: 30px;
+}
+
+/* Image */
+.image-container {
+  width: 100%;
+  display: flex;
+}
+
+.recipe-image {
+  width: 100%;
+  height: 300px;
+  border-radius: 30px;
+}
+
+/* Title */
+.title-container {
+  width: 100%;
+  display: flex;
+  text-align: start;
+}
+
+.recipe-title {
+  font-size: 50px;
+  font-family: "Nunito", serif;
+}
+
+/* Description */
+.description-container {
+  width: 100%;
+  display: flex;
+  text-align: start;
+}
+
+.recipe-description {
+  font-size: 16px;
+  color: #333;
+}
+
+/* Preparation Time */
+.prep-time {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff7fc;
+  padding: 30px;
+  border-radius: 30px;
+}
+
+.prep-heading {
+  font-size: 40px;
+  color: #7e3c5c;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.prep-list {
+  color: black;
+  list-style: disc;
+  margin-left: 20px;
+}
+.prep-list span{
+font-weight: bold;
+}
+/* Ingredients & Instructions */
+.ingredients,
+.instructions,
+.nutrition {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  color: #8d5e51;
+}
+
+.section-heading {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* Ingredients List */
+.ingredients-list {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+/* Instructions List */
+.instructions-list {
+  list-style: decimal;
+  margin-left: 20px;
+  line-height: 1.6;
+}
+.instructions-list span{
+  font-weight: bold;
+}
+
+/* Nutrition */
+.nutrition-description {
+  margin-bottom: 15px;
+}
+
+.nutrition-table {
+  display: grid;
+  grid-template-columns: 1fr ;
+}
+
+.nutrition-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 8px;
+  border-bottom: 2px solid gray;
+}
+
+.nutrition-row.no-border {
+  border-bottom: none;
+}
+
+.nutrition-value {
+  color: #8d5e51;
+  font-weight: bold;
+}
