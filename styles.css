@@ -1,0 +1,83 @@
+
+@font-face {
+    font-family: 'CustomFont'; /* Name of the font */
+    src: url('/assets/fonts/RedHatText-VariableFont_wght.ttf') format('truetype'); /* Path to the .ttf file */
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+  font-family: CustomFont; 
+}
+
+body{
+    background-color: #fcf9f4;
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;align-items: center;
+}
+#sidecart{
+
+  max-height: 450px;
+}
+#cardItem img {
+    border-radius: 10px;
+}
+#greenTab{
+    background-color: #fae6d2;
+    font-size: 15px;
+    border-radius: 10px;
+}
+#cartButton{
+    border-radius: 30px;
+    background-color: #bd542f;
+}
+@media only screen and (max-width: 550px) {
+    body{
+        padding: 20px;
+    }
+    #mainContainer{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 550px) {
+    body{
+        padding: 20px;
+    }
+    #mainContainer{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 750px) {
+    body{
+        padding: 20px;
+    }
+    #mainContainer{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    #sidecart {
+        width: 20%;
+
+    }
+}
+@media only screen and (min-width: 1200px) {
+    body{
+        padding: 20px;
+    }
+    #mainContainer{
+        display: flex;
+    flex-direction: row;
+        width: 100%;
+    }
+    #sidecart {
+        width: 20%;
+max-width: 300px; padding: 20px;
+    }
+}
