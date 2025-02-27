@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'WorkSans-Italic-VariableFont_wght';
+    src: url('/frontendMentorChallenges/CHALLENGE4/assets/fonts/WorkSans-VariableFont_wght.ttf') format('truetype');
+  }
+  *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  body, html {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .w-100.vh-100.p-0.position-relative {
+    margin: 0;
+    padding: 0;
+  }
+  .bg-image {
+    background-image: url('assets/images/background-pattern-desktop.svg');
+    background-size: cover;
+    background-position: center;
+  }
+  #contentBox {
+    width: 80%;padding: 15px; /* Default width for small screens */
+  }
+  
+  @media only screen and (min-width: 768px) { /* Medium screens */
+    #contentBox {
+      width: 75%; padding: 20px;
+    }
+  }
+  
+  @media only screen and (min-width: 992px) { /* Large screens */
+    #contentBox {
+      width: 50%;
+      padding: 30px;
+    }
+  }
+   
