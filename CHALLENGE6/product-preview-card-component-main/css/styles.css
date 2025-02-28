@@ -1,0 +1,75 @@
+@font-face {
+    font-family: 'WorkSans-Italic-VariableFont_wght';
+    src: url('/frontendMentorChallenges/CHALLENGE6/product-preview-card-component-main/') format('truetype');
+  }
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  #mainContainer{
+    background-color: #f2eae2;
+  }
+  #productCard{
+    background-color: white;
+  }
+  #cardImageContainer img{
+    width: 100%;
+  }
+  @media only screen and (max-width: 550px) {
+    #productCard {
+        width: 340px;
+     
+        display: flex;
+        flex-direction: column;
+        border-top-left-radius: 15px;
+border-top-right-radius: 15px;
+    }
+    #cardImageContainer{
+        height: 50%;
+    }
+    #productDetail{
+        height: 50%;
+      }
+    #cardImageContainer img{
+border-top-left-radius: 15px;
+border-top-right-radius: 15px;
+object-fit: fill;
+    }
+    #productImage{
+    
+            content: url("/frontendMentorChallenges/CHALLENGE6/product-preview-card-component-main/images/image-product-mobile.jpg");
+        
+    }
+  }
+
+  @media only screen and (min-width: 550px) {
+    #productCard {
+        width: 80%;
+        max-width: 700px;
+        height: 500px;
+        display: flex;
+        flex-direction: row;
+     border-radius: 15px;
+    }
+    #cardImageContainer {
+        width: 50%;
+    height: 100%;}
+    #cardImageContainer img{
+border-top-left-radius: 15px;
+border-bottom-left-radius: 15px;
+height: 100%;
+object-fit: fill;
+    }
+  #productDetail{
+    width: 50%;
+  }
+  h2 {
+    font-size: 60px;
+  }
+  #productImage{
+    
+    content: url("/frontendMentorChallenges/CHALLENGE6/product-preview-card-component-main/images/image-product-desktop.jpg");
+
+}
+  }
